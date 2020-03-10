@@ -1,0 +1,19 @@
+year,geo_name,geo,income,income_moe
+2013,"United States","01000US",53046.0,89.0
+2014,"United States","01000US",53482.0,95.0
+2015,"United States","01000US",53889.0,110.0
+2013,"Indiana","04000US18",48248.0,198.0
+2014,"Indiana","04000US18",48737.0,254.0
+2015,"Indiana","04000US18",49255.0,221.0
+2013,"Tippecanoe County, IN","05000US18157",44246.0,1010.0
+2014,"Tippecanoe County, IN","05000US18157",44474.0,963.0
+2015,"Tippecanoe County, IN","05000US18157",45932.0,1223.0
+2013,"West Lafayette, IN","16000US1882862",29936.0,3339.0
+2014,"West Lafayette, IN","16000US1882862",28507.0,3318.0
+2015,"West Lafayette, IN","16000US1882862",27527.0,1891.0
+2013,"Lafayette-West Lafayette, IN Metro Area","31000US29200",45062.0,1073.0
+2014,"Lafayette-West Lafayette, IN Metro Area","31000US29200",45364.0,965.0
+2015,"Lafayette-West Lafayette, IN Metro Area","31000US29200",46582.0,1032.0
+2013,"Lafayette & West Lafayette Cities PUMA, IN","79500US1801200",44246.0,1010.0
+2014,"Lafayette & West Lafayette Cities PUMA, IN","79500US1801200",44474.0,963.0
+2015,"Lafayette & West Lafayette Cities PUMA, IN","79500US1801200",45932.0,1223.0

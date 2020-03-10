@@ -1,0 +1,4 @@
+year,geo_name,geo,pop_2ormore,pop_2ormore_moe,pop_asian,pop_asian_moe,pop_black,pop_black_moe,pop_hawaiian,pop_hawaiian_moe,pop_latino,pop_latino_moe,pop_native,pop_native_moe,pop_other,pop_other_moe,pop_white,pop_white_moe
+2013,"West Lafayette, IN","16000US1882862",657.0,208.0,5628.0,481.0,810.0,355.0,33.0,51.0,987.0,246.0,20.0,28.0,8.0,13.0,21994.0,677.0
+2014,"West Lafayette, IN","16000US1882862",805.0,250.0,6063.0,516.0,951.0,424.0,37.0,58.0,1014.0,267.0,25.0,37.0,11.0,17.0,21937.0,795.0
+2015,"West Lafayette, IN","16000US1882862",1096.0,267.0,9637.0,550.0,1313.0,392.0,10.0,19.0,1700.0,345.0,14.0,14.0,23.0,26.0,30206.0,693.0

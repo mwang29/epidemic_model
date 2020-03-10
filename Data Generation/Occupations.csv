@@ -1,0 +1,76 @@
+year,geo_name,geo,acs_occ_name,acs_occ,num_emp,num_emp_moe,num_emp_rca
+2013.0,"West Lafayette, IN","16000US1882862","Management","0000000000",1098.0,209.442,0.8971
+2013.0,"West Lafayette, IN","16000US1882862","Business & Financial Operations","0000010000",484.0,147.187,0.753354
+2013.0,"West Lafayette, IN","16000US1882862","Computer & Mathematical","0001000000",384.0,137.83,1.07794
+2013.0,"West Lafayette, IN","16000US1882862","Architecture & Engineering","0001010000",321.0,111.198,1.34923
+2013.0,"West Lafayette, IN","16000US1882862","Life, Physical, & Social Science","0001020000",528.0,150.572,4.39663
+2013.0,"West Lafayette, IN","16000US1882862","Community & Social Service","0002000000",265.0,99.0454,1.18105
+2013.0,"West Lafayette, IN","16000US1882862","Legal","0002010000",188.0,91.6788,1.12594
+2013.0,"West Lafayette, IN","16000US1882862","Education, Training, & Library","0002020000",3443.0,431.028,4.26212
+2013.0,"West Lafayette, IN","16000US1882862","Arts & Recreation","0002030000",244.0,91.2414,0.901322
+2013.0,"West Lafayette, IN","16000US1882862","Health Practitioners","0003000000",395.0,126.317,0.807757
+2013.0,"West Lafayette, IN","16000US1882862","Health Technicians","0003010000",140.0,78.0,0.631953
+2013.0,"West Lafayette, IN","16000US1882862","Healthcare Support","0100000000",183.0,92.1792,0.536615
+2013.0,"West Lafayette, IN","16000US1882862","Law Enforcement Supervisors","0101000000",175.0,80.2122,1.02179
+2013.0,"West Lafayette, IN","16000US1882862","Fire Fighting Supervisors","0101010000",48.0,59.0931,0.379076
+2013.0,"West Lafayette, IN","16000US1882862","Food & Serving","0102000000",1230.0,285.895,1.54559
+2013.0,"West Lafayette, IN","16000US1882862","Cleaning & Maintenance","0103000000",159.0,71.7844,0.291873
+2013.0,"West Lafayette, IN","16000US1882862","Personal Care & Service","0104000000",649.0,208.406,1.30476
+2013.0,"West Lafayette, IN","16000US1882862","Sales","0200000000",1270.0,279.016,0.873245
+2013.0,"West Lafayette, IN","16000US1882862","Administrative","0201000000",1146.0,215.335,0.63291
+2013.0,"West Lafayette, IN","16000US1882862","Farming, Fishing, & Forestry","0300000000",28.0,21.2132,0.368151
+2013.0,"West Lafayette, IN","16000US1882862","Construction & Extraction","0301000000",101.0,77.7946,0.163185
+2013.0,"West Lafayette, IN","16000US1882862","Installation, Maintenance, & Repair","0302000000",131.0,97.9847,0.332881
+2013.0,"West Lafayette, IN","16000US1882862","Production","0400000000",311.0,110.86,0.42039
+2013.0,"West Lafayette, IN","16000US1882862","Transportation","0401000000",105.0,64.5136,0.235851
+2013.0,"West Lafayette, IN","16000US1882862","Material Moving","0402000000",83.0,65.5515,0.249622
+2014.0,"West Lafayette, IN","16000US1882862","Management","0000000000",1120.0,247.493,0.928433
+2014.0,"West Lafayette, IN","16000US1882862","Business & Financial Operations","0000010000",454.0,143.934,0.717216
+2014.0,"West Lafayette, IN","16000US1882862","Computer & Mathematical","0001000000",392.0,124.423,1.09641
+2014.0,"West Lafayette, IN","16000US1882862","Architecture & Engineering","0001010000",328.0,108.6,1.4171
+2014.0,"West Lafayette, IN","16000US1882862","Life, Physical, & Social Science","0001020000",543.0,145.671,4.60643
+2014.0,"West Lafayette, IN","16000US1882862","Community & Social Service","0002000000",235.0,91.0494,1.06548
+2014.0,"West Lafayette, IN","16000US1882862","Legal","0002010000",160.0,76.3217,0.988858
+2014.0,"West Lafayette, IN","16000US1882862","Education, Training, & Library","0002020000",3286.0,396.376,4.16525
+2014.0,"West Lafayette, IN","16000US1882862","Arts & Recreation","0002030000",252.0,93.6056,0.938505
+2014.0,"West Lafayette, IN","16000US1882862","Health Practitioners","0003000000",417.0,131.484,0.859581
+2014.0,"West Lafayette, IN","16000US1882862","Health Technicians","0003010000",122.0,64.3506,0.549628
+2014.0,"West Lafayette, IN","16000US1882862","Healthcare Support","0100000000",193.0,86.0349,0.580489
+2014.0,"West Lafayette, IN","16000US1882862","Law Enforcement Supervisors","0101000000",126.0,63.561,0.752665
+2014.0,"West Lafayette, IN","16000US1882862","Fire Fighting Supervisors","0101010000",66.0,65.5515,0.539774
+2014.0,"West Lafayette, IN","16000US1882862","Food & Serving","0102000000",1159.0,225.887,1.4707
+2014.0,"West Lafayette, IN","16000US1882862","Cleaning & Maintenance","0103000000",208.0,79.2023,0.389645
+2014.0,"West Lafayette, IN","16000US1882862","Personal Care & Service","0104000000",573.0,220.493,1.16476
+2014.0,"West Lafayette, IN","16000US1882862","Sales","0200000000",1089.0,245.449,0.770301
+2014.0,"West Lafayette, IN","16000US1882862","Administrative","0201000000",1233.0,233.529,0.705919
+2014.0,"West Lafayette, IN","16000US1882862","Farming, Fishing, & Forestry","0300000000",51.0,32.6956,0.672156
+2014.0,"West Lafayette, IN","16000US1882862","Construction & Extraction","0301000000",108.0,80.6536,0.180046
+2014.0,"West Lafayette, IN","16000US1882862","Installation, Maintenance, & Repair","0302000000",131.0,68.352,0.344619
+2014.0,"West Lafayette, IN","16000US1882862","Production","0400000000",333.0,112.641,0.459596
+2014.0,"West Lafayette, IN","16000US1882862","Transportation","0401000000",118.0,73.1642,0.268948
+2014.0,"West Lafayette, IN","16000US1882862","Material Moving","0402000000",143.0,83.0963,0.431501
+2015.0,"West Lafayette, IN","16000US1882862","Management","0000000000",1257.0,260.0,0.770432
+2015.0,"West Lafayette, IN","16000US1882862","Business & Financial Operations","0000010000",463.0,138.946,0.545665
+2015.0,"West Lafayette, IN","16000US1882862","Computer & Mathematical","0001000000",516.0,153.844,1.05279
+2015.0,"West Lafayette, IN","16000US1882862","Architecture & Engineering","0001010000",478.0,135.591,1.55058
+2015.0,"West Lafayette, IN","16000US1882862","Life, Physical, & Social Science","0001020000",739.0,169.779,4.71285
+2015.0,"West Lafayette, IN","16000US1882862","Community & Social Service","0002000000",215.0,85.276,0.728221
+2015.0,"West Lafayette, IN","16000US1882862","Legal","0002010000",125.0,70.9366,0.585135
+2015.0,"West Lafayette, IN","16000US1882862","Education, Training, & Library","0002020000",4399.0,460.124,4.21137
+2015.0,"West Lafayette, IN","16000US1882862","Arts & Recreation","0002030000",377.0,131.59,1.04731
+2015.0,"West Lafayette, IN","16000US1882862","Health Practitioners","0003000000",430.0,121.824,0.660242
+2015.0,"West Lafayette, IN","16000US1882862","Health Technicians","0003010000",115.0,59.4054,0.382596
+2015.0,"West Lafayette, IN","16000US1882862","Healthcare Support","0100000000",157.0,80.9938,0.357462
+2015.0,"West Lafayette, IN","16000US1882862","Law Enforcement Supervisors","0101000000",133.0,68.4251,0.60122
+2015.0,"West Lafayette, IN","16000US1882862","Fire Fighting Supervisors","0101010000",46.0,58.1808,0.286116
+2015.0,"West Lafayette, IN","16000US1882862","Food & Serving","0102000000",1705.0,287.863,1.61376
+2015.0,"West Lafayette, IN","16000US1882862","Cleaning & Maintenance","0103000000",362.0,120.739,0.512694
+2015.0,"West Lafayette, IN","16000US1882862","Personal Care & Service","0104000000",1135.0,243.655,1.71447
+2015.0,"West Lafayette, IN","16000US1882862","Sales","0200000000",1431.0,268.017,0.766023
+2015.0,"West Lafayette, IN","16000US1882862","Administrative","0201000000",1857.0,330.929,0.809119
+2015.0,"West Lafayette, IN","16000US1882862","Farming, Fishing, & Forestry","0300000000",64.0,39.6611,0.634875
+2015.0,"West Lafayette, IN","16000US1882862","Construction & Extraction","0301000000",187.0,91.2195,0.233143
+2015.0,"West Lafayette, IN","16000US1882862","Installation, Maintenance, & Repair","0302000000",159.0,90.2497,0.316114
+2015.0,"West Lafayette, IN","16000US1882862","Production","0400000000",408.0,166.643,0.421718
+2015.0,"West Lafayette, IN","16000US1882862","Transportation","0401000000",172.0,93.0484,0.290911
+2015.0,"West Lafayette, IN","16000US1882862","Material Moving","0402000000",192.0,89.0505,0.428657

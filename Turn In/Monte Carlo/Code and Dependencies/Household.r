@@ -1,0 +1,77 @@
+#Population Generation Parameters
+numHouseholds <- 40490 #number of households generated
+
+#Region Data Initialization
+Data <- read.csv("stats.csv", header = T)
+regions <- Data[,2]
+house <- Data[,c(24,25)]
+house <- house[complete.cases(house),]
+regionsProb <- regions / sum(regions)
+
+#Data frame initialization
+df <- data.frame(matrix(ncol = 12, nrow = numHouseholds))
+colnames(df)<-c("Region","Households","Income","nChildren", "nPeople","childAges","Schools","Race","Males","Females","nOld","PubTrans")
+#Region
+df$Region <- sample(x = c(1:70), numHouseholds, replace = T, prob = regionsProb)
+#Households
+df$Households[df$Region %in% c(12,14,15,17,18,68,70)] <- "R" #assuming all purdue are roommates
+df$Households[df$Region < 20 && !(df$Region %in% c(12,14,15,17,18,68,70))] <- sample(x = c("HW","SP", "A", "R", "AL_O", "HW_O","Fam_O"), size = sum(df$Region < 20), replace = T, prob = house[,1])
+df$Households[df$Region >= 20 && !(df$Region %in% c(12,14,15,17,18,68,70))] <- sample(x = c("HW","SP", "A", "R", "AL_O", "HW_O","Fam_O"), size = sum(df$Region >= 20), replace = T, prob = house[,2])
+
+#nChildren
+kids <- (df$Households == "HW" | df$Households == "SP")
+df$nChildren[kids] <- sample(x = c(1,2,3,4), size = sum(kids), replace = T, prob = c(0.41,0.39,0.14,0.06))
+df$nChildren[!kids] <- 0
+#nPeople
+df$nPeople <- ifelse(df$Households == "HW", 2 + df$nChildren, 
+              ifelse(df$Households == "HW_O", 2, 
+              ifelse(df$Households == "Fam_O", 3 + df$nChildren, 
+              ifelse(df$Households == "SP", 1 + df$nChildren,
+              ifelse(df$Households == "R", sample(c(2,3,4,5,6), prob = c(0.2,0.3,0.3,0.1,0.1)),
+              1))))) #needs other distributions
+#nOld
+df$nOld <- ifelse(df$Households == "HW_O", 2, 
+           ifelse(df$Households == "Fam_O" | df$Households == "Al_O", 1, 
+           0))
+#Income/PubTrans
+for (x in c(1:70)){
+  df$Income[df$Region == x] <- sample(x = c("NO","POV"), size = sum(df$Region == x), replace = T, prob = c(1 - Data[x,17]/100, Data[x,17]/100))
+  #if not below povery then median income
+  df$PubTrans[df$Region == x] <- sample(x = c("Yes", "No"), size = sum(df$Region == x), replace = T, prob = c(Data[x,23]/100, 1- Data[x,4]/100))
+  #depends on income?
+  df$Race[df$Region == x] <- sample(x = c("White", "Black",	"Asian","Hispanic","Amer Indian", "Multirace", "Other"), size = sum(df$Region == x), replace = T, prob = Data[x,c(5:11)])
+}
+
+schoolData <- read.csv('schools.csv', header = T, stringsAsFactors=FALSE)
+for (y in c(1:nrow(df))){
+  #df$Males[y] <- sum(sample(x = c(0,1),df$nPeople[y], Data[df$Region[y], 4]))
+  
+ifelse(df$Households[y] == "R"|df$Household == "Al_O"|df$Household == "A",df$Males[y]<-sum(sample(c(0,1),df$nPeople[y],Data[df$Region[y], 4])),
+    ifelse(df$Households[y] == "HW"| df$Households[y] == "Fam_O",df$Males[y]<-1 + sum(sample(c(0,1),df$nChildren[y]+df$nOld[y],Data[df$Region[y], 4])),
+           ifelse(df$Households[y] == "SP",df$Males[y]<-sum(sample(c(0,1),1+df$nChildren[y],Data[df$Region[y], 4])),1)))
+                   
+                                                                                                                                         
+  #depends on house hold type!!
+  df$Females[y] <- df$nPeople[y] - df$Males[y]
+  ifelse(df$nChildren[y] != 0 & sum(Data[df$Region[y], c(18:22)]) != 0, 
+         childAges <- sample(x = c("PreK", "K", "Elem", "Mid", "High"), size = df$nChildren[y], replace = T, prob = Data[df$Region[y], c(18:22)]),
+         childAges <- 'NA')
+  temp <- vector('character')
+  if (df$nChildren[y] != 0 & sum(Data[df$Region[y], c(18:22)]) != 0){
+    for (z in c(1:length(childAges))){
+      ifelse(childAges[z] == "K" | childAges[z] == "Elem", temp <- c(temp,sample(x = schoolData[df$Region[y],c(1,2)], size = 1, prob = c(0.5, 0.5))),
+      ifelse(childAges[z] == "Mid", temp <- c(temp,schoolData[df$Region[y],3]), ifelse(childAges[z] == "High", temp <- c(temp,schoolData[df$Region[y],4]), temp <- "NA")))
+    }
+  df$childAges[y] <- paste(childAges, collapse = "/")
+  df$Schools[y] <- paste(temp, collapse = "/")
+  }
+  else {
+    df$childAges[y] <- "NA"
+    df$Schools[y] <- "NA"
+  }
+}
+df$childAges <- NULL
+df$Schools <- NULL
+Household_ID <- rownames(df)
+df <- cbind(Household_ID, df)
+write.csv(df, file = "Household2.csv",row.names=FALSE)

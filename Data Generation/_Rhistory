@@ -1,0 +1,73 @@
+install.packages("RcmdrPlugin.DoE")
+require(RcdmrPlugin.DoE)
+require(RcdmrPlugin.DoE)
+install.packages("RcmdrPlugin.DoE")
+require(RcdmrPlugin.DoE)
+install.packages("RcmdrPlugin.DoE")
+install.packages("RcmdrPlugin.DoE")
+require(RcmdrPlugin.Doe)
+require(RcmdrPlugin.DoE)
+install.packages("RcmdrPlugin.DoE")
+require(RcmdrPlugin.DoE)
+install.packages("swirl")
+5+5
+rmultinom(10, 1, raceData)
+raceData <- read.csv("Race.csv", header = T)
+raceData <- raceData[3,seq(4,length(raceData),2)]
+raceData <- raceData / sum(raceData)
+rmultinom(10, 1, raceData)
+occupData <- read.csv("Occupations.csv", header = T)
+occupData <- raceData[,]
+setwd("~/Google Drive/IE332 Project/Data Generation")
+raceData <- read.csv("Race.csv", header = T)
+raceData <- raceData[3,seq(4,length(raceData),2)]
+raceData <- raceData / sum(raceData)
+rmultinom(10, 1, raceData)
+occupData <- read.csv("Occupations.csv", header = T)
+occupData <- raceData[,]
+sampleDist = function(n) {
+sample(x = c("2ormore", "asian","black","hawaiian","latino", "native", "other", "white"), n, replace = T, prob = raceData)
+}
+sampleDist(5)
+rmultinom(10, 100000, raceData)
+sampleDist = function(n) {
+sample(x = c("2ormore", "asian","black","hawaiian","latino", "native", "other", "white"), n, replace = T, prob = raceData)
+}
+sampleDist(5)
+sampleDist(50)
+sampleDist(50000)
+y <- sampleDist(50000)
+y <- t(sampleDist(50000))
+y
+y <- t(y)
+y <- (sampleDist(50000)
+y <- t(y)
+y <- sampleDist(50000)
+y <- t(y)
+y
+View(y)
+View(y)
+View(y)
+head(y)
+y <- sampleDist(50000)
+y
+y <- sampleDist(50)
+y
+y <- sampleDist(5)
+y <- sampleDist(5)
+y
+sampleDist = function(n) {
+sample(x = c("2ormore", "asian","black","hawaiian","latino", "native", "other", "white"), n, replace = T, prob = raceData)
+}
+y <- sampleDist(500)
+sampleDist = function(n) {
+sample(x = c("2ormore", "asian","black","hawaiian","latino", "native", "other", "white"), n, replace = F, prob = raceData)
+}
+y2 <- sampleDist(500)
+sampleDist = function(n) {
+sample(x = c("2ormore", "asian","black","hawaiian","latino", "native", "other", "white"), n, replace = F, prob = raceData)
+}
+y2 <- sampleDist(3)
+y2
+y2 <- sampleDist(7)
+y2

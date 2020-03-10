@@ -1,0 +1,3 @@
+setwd("C:/Users/DELL 5558/Google Drive/IE332 Project/Code/Population Generation")
+#Data import
+Data <- read.csv("generatedPop.csv", header = T)
