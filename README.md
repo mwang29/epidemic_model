@@ -1,4 +1,4 @@
 # epidemic_model
 Simulated model of disease spread in West Lafayette, IN. 
 
-![](name-of-giphy.gif)
+![](Deliverables/Website Files/Website/images/cases/Case1.gif)
