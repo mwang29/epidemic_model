@@ -10,4 +10,6 @@ Costs of different public policies:
 
 ![](images/policies.png)
 
+A barebones version of the final website is hosted on my personal website <a href="https://www.michaelwang.codes/epidemic/epidemic target"= "_blank"></a>
+
 
