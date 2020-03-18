@@ -3,7 +3,7 @@ For the cities of West Lafayette and Lafayette IN, this project includes populat
 
 Example of SIR model for the Flu, targeting 10% of the population's most connected individuals, and 3 initial infected individuals:
 
-<p align="center">![](Case1.gif)</p>
+<div style="text-align:center"><img src="Case.gif" /></div>
 
 
 Costs of different public policies:
